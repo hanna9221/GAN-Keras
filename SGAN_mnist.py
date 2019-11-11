@@ -233,7 +233,7 @@ def generate_images():
     return
 
 
-# Load and normalize dadta
+# Load and normalize data
 (X_train, _), (_, _) = mnist.load_data()
 X_train = X_train / 127.5 - 1
 X_train = np.expand_dims(X_train, 3)
